@@ -1,0 +1,70 @@
+### git worktree list
+C:/Users/pc/Downloads/בסד קורס גיט/ticketrush                              c5ca861 [main]
+C:/Users/pc/Downloads/בסד קורס גיט/ticketrush-early-access                 3efacb9 [feature/early-access]
+C:/Users/pc/Downloads/בסד קורס גיט/ticketrush-hotfix-price                 dab9536 [hotfix/price]
+C:/Users/pc/Downloads/בסד קורס גיט/ticketrush-review-noa-refund            b2cd4b8 [review/noa-refund]
+C:/Users/pc/Downloads/בסד קורס גיט/ticketrush-security-config              43ad916 [security/config-key]
+C:/Users/pc/Downloads/בסד קורס גיט/ticketrush-waitlist                     c508d2b [feature/waitlist]
+
+### git branch -a -vv
++ feature/early-access      3efacb9 (C:/Users/pc/Downloads/בסד קורס גיט/ticketrush-early-access) feat: allow members six tickets per order
++ feature/waitlist          c508d2b (C:/Users/pc/Downloads/בסד קורס גיט/ticketrush-waitlist) feat: add waitlist email helper
++ hotfix/price              dab9536 (C:/Users/pc/Downloads/בסד קורס גיט/ticketrush-hotfix-price) Revert perf faster price formatting
+* main                      c5ca861 [origin/main: ahead 14] Merge payment config security fix
++ review/noa-refund         b2cd4b8 (C:/Users/pc/Downloads/בסד קורס גיט/ticketrush-review-noa-refund) [origin/noa/refund: ahead 1] docs: review Noa refund calculation
++ security/config-key       43ad916 (C:/Users/pc/Downloads/בסד קורס גיט/ticketrush-security-config) security: stop tracking local payment config
+  remotes/origin/HEAD       -> origin/main
+  remotes/origin/dana/promo d4b1e35 test: add student discount tests
+  remotes/origin/main       6e5b25d feat: friendlier message for empty quantity
+  remotes/origin/noa/refund f7e8785 test: refund tests
+  remotes/origin/ruth/fixes fee9f58 wip: try new fonts
+
+### git log --graph --oneline --all -n 80
+*   c5ca861 (HEAD -> main, tag: v1.1) Merge payment config security fix
+|\  
+| * 43ad916 (security/config-key) security: stop tracking local payment config
+* |   2be08f7 Merge waitlist email helper
+|\ \  
+| * | c508d2b (feature/waitlist) feat: add waitlist email helper
+* | |   93bdc93 Merge early access and student promotion
+|\ \ \  
+| |_|/  
+|/| |   
+| * | 3efacb9 (feature/early-access) feat: allow members six tickets per order
+| * | c5a4c03 Revert perf faster price formatting
+| * |   14535f3 Merge student promotion into early access pricing
+| |\ \  
+| | * | d4b1e35 (origin/dana/promo) test: add student discount tests
+| | * | 0841085 feat: student discount (15%)
+| * | | ba27278 feat: add early access member pricing
+| |/ /  
+* | / 9281d4c fix: correct concert date in events.js
+| |/  
+|/|   
+* |   ac40b12 Merge hotfix restore correct price formatting
+|\ \  
+| |/  
+|/|   
+| * dab9536 (hotfix/price) Revert perf faster price formatting
+|/  
+| * b2cd4b8 (review/noa-refund) docs: review Noa refund calculation
+| * f7e8785 (origin/noa/refund) test: refund tests
+| * 61bfedd feat: refund calculation for cancelled orders
+|/  
+| * fee9f58 (origin/ruth/fixes) wip: try new fonts
+| * 72063d7 debug: dump state to console
+| * 20cd6a9 WIP: try removing ticket limits
+| * 8284d98 fix: correct concert date in events.js
+| * 339324e WIP: new checkout flow (do not merge)
+|/  
+* 6e5b25d (origin/main, origin/HEAD) feat: friendlier message for empty quantity
+* 9119fe2 fix: typo in hero heading
+* a61f4ad feat: add footer with links
+* 73924c4 perf: faster price formatting
+* 03bd4dd docs: update artist lineup text
+* c44fbf8 feat: add early-access promo banner
+* 62f48b5 (tag: v1.0) feat: purchase page UI
+* f4c58bc feat: payment provider config
+* 2cc7e97 feat: event details data
+* 8a944f6 feat: ticket price calculation with tests
+* ed1b1e9 Initial commit: project skeleton and exercise tooling
